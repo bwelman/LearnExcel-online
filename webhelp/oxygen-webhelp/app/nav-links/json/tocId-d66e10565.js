@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Exercise: data001 - Import simple csv file","shortdesc":"\n                  <p class=\"shortdesc\">Level: 2</p>\n               ","href":"import\/exercises\/ex_data001.html","attributes": {"data-id":"ex_data001",},"menu": {"hasChildren":false,},"tocID":"ex_data001-d66e10566","topics":[]}]});
