@@ -5010,8 +5010,44 @@
             </topic>
          </topic>
       </topic>
+      <topic href="tidydata/tidydata.html" data-id="tidydata" wh-toc-id="tidydata-d66e11506">
+         <title>Tidy Data</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="tidydata"></resourceid>
+            <navtitle class="- topic/navtitle ">Tidy Data</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Tidy Data</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+            <author class="- topic/author ">Ben Welman</author>
+            <prodinfo class="- topic/prodinfo ">
+               
+               <prodname class="- topic/prodname ">Excel</prodname>
+               
+            </prodinfo>
+         </topicmeta>
+         <topic href="tidydata/pivots_unpivoting.html" data-id="pivots_unpivoting" wh-toc-id="pivots_unpivoting-d66e11523">
+            <title>Task: Unpivot data</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Unpivot data that is in crosstab/pivot format.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="pivots_unpivoting"></resourceid>
+               <navtitle class="- topic/navtitle ">Task: Unpivot data</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Task: Unpivot data</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Unpivot data that is in crosstab/pivot format.</shortdesc>
+               <author class="- topic/author ">Ben Welman</author>
+               <prodinfo class="- topic/prodinfo ">
+                  
+                  <prodname class="- topic/prodname ">Excel</prodname>
+                  
+               </prodinfo>
+            </topicmeta>
+         </topic>
+      </topic>
    </topic>
-   <topic href="common/colofon.html" format="dita" data-id="colofon" wh-toc-id="colofon-d66e11258">
+   <topic href="common/colofon.html" format="dita" data-id="colofon" wh-toc-id="colofon-d66e11545">
       <title>Colofon</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
