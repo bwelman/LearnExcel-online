@@ -146,6 +146,8 @@
    <appContext helpID="array_simple" path="arrays/array_simple.html"/>
    <appContext helpID="array_single" path="arrays/array_single.html"/>
    <appContext helpID="array_complex" path="arrays/array_complex.html"/>
+   <appContext helpID="ex_matr001" path="arrays/exercises/ex_matr001.html"/>
+   <appContext helpID="ex_matr002" path="arrays/exercises/ex_matr002.html"/>
    <appContext helpID="table" path="tables/table.html"/>
    <appContext helpID="table_over" path="tables/table_over.html"/>
    <appContext helpID="table_formbutton" path="tables/table_formbutton.html"/>
