@@ -307,6 +307,7 @@
    <appContext helpID="import_over" path="import/import_over.html"/>
    <appContext helpID="import_csv" path="import/import_csv.html"/>
    <appContext helpID="import_webdata" path="import/import_webdata.html"/>
+   <appContext helpID="query_options" path="import/query_options.html"/>
    <appContext helpID="ex_data001" path="import/exercises/ex_data001.html"/>
    <appContext helpID="forecasts" path="forecasts/forecasts.html"/>
    <appContext helpID="forecasts_timeserie_introduction"
