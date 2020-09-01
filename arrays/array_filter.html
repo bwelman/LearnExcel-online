@@ -1,0 +1,164 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us" whc:version="22.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2020" /><meta name="DC.rights.owner" content="(C) Copyright 2020" /><meta name="DC.type" content="concept" /><meta name="description" content="Returns the filtered values from an array/range. Syntax FILTER(array,include,[if_empty]) array: the range or array to filter. include: an array of booleans where TRUE represents a row or column to ..." /><meta name="DC.subject" content="FILTER" /><meta name="keywords" content="FILTER" /><meta name="indexterms" content="FILTER" /><meta name="DC.relation" scheme="URI" content="../arrays/array_dynamic.html" /><meta name="prodname" content="Excel 365" /><meta name="DC.creator" content="Ben Welman" /><meta name="DC.date.created" content="2020-08-31" /><meta name="DC.date.modified" content="2020-08-31" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="array_filter" /><meta name="DC.language" content="en-US" />        
+      <title>FILTER</title><!--  Generated with Oxygen version 22.1, build number 2020072823.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="array_filter-d61e5108" /><meta name="wh-source-relpath" content="arrays/array_filter.dita" /><meta name="wh-out-relpath" content="arrays/array_filter.html" />
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2020072823" />
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/light.css?buildId=2020072823" />
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-1284000-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-1284000-5');
+    </script>
+</head>
+
+    <body id="array_filter" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="22.1">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://softwijs.nl/" class=" wh_logo d-none d-sm-block "><img src="../LogoSW.gif" alt="  Learn Excel 365  A task oriented textbook  " /></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="booktitle">  <span class="ph mainbooktitle">Learn Excel 365</span>  <span class="ph booktitlealt">A task oriented textbook</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul xmlns:xhtml="http://www.w3.org/1999/xhtml" role="menubar" aria-label="Menu"><li role="menuitem"><span id="preface-online-d61e271-mi" data-tocid="preface-online-d61e271" data-state="leaf" class=" topicref " data-id="preface-online"><span class="title"><a href="../common/preface-online.html">Preface</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="part_excel-d61e287-mi" data-tocid="part_excel-d61e287" data-state="not-ready" class=" topicref " data-id="part_excel"><span class="title"><a href="../part_excel.html">Working with Excel</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="part_analysis-d61e10716-mi" data-tocid="part_analysis-d61e10716" data-state="not-ready" class=" topicref " data-id="part_analysis"><span class="title"><a href="../part_analysis.html">Advanced Data Analysis</a></span></span></li><li role="menuitem"><span id="colofon-d61e12238-mi" data-tocid="colofon-d61e12238" data-state="leaf" class=" topicref " data-id="colofon"><span class="title"><a href="../common/colofon.html">Colofon</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div></form></div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="part_excel"><span class="title"><a href="../part_excel.html">Working with Excel</a></span></span></li><li><span class="topicref" data-id="array"><span class="title"><a href="../arrays/array.html">Array Formulas</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li><span class="topicref" data-id="array_dynamic"><span class="title"><a href="../arrays/array_dynamic.html">Dynamic array formulas</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li class="active"><span class="topicref" data-id="array_filter"><span class="title"><a href="../arrays/array_filter.html">FILTER</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="part_excel-d61e287" class="topicref" data-id="part_excel" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action part_excel-d61e287-link" class="wh-expand-btn"></span><span class="title"><a href="../part_excel.html" id="part_excel-d61e287-link">Working with Excel</a></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="intro-d61e517" class="topicref" data-id="intro" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action intro-d61e517-link" class="wh-expand-btn"></span><span class="title"><a href="../intro/intro.html" id="intro-d61e517-link">Starting with Excel</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="worksheet-d61e968" class="topicref" data-id="worksheet" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action worksheet-d61e968-link" class="wh-expand-btn"></span><span class="title"><a href="../worksheets/worksheet.html" id="worksheet-d61e968-link">The worksheet</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="data-d61e1450" class="topicref" data-id="data" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action data-d61e1450-link" class="wh-expand-btn"></span><span class="title"><a href="../data/data.html" id="data-d61e1450-link">Data entry and editing</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="formatting-d61e1998" class="topicref" data-id="formatting" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action formatting-d61e1998-link" class="wh-expand-btn"></span><span class="title"><a href="../formatting/formatting.html" id="formatting-d61e1998-link">Formatting worksheet and data</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="calculation-d61e2603" class="topicref" data-id="calculation" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action calculation-d61e2603-link" class="wh-expand-btn"></span><span class="title"><a href="../calculations/calculation.html" id="calculation-d61e2603-link">Modeling Calculations</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="function-d61e3254" class="topicref" data-id="function" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action function-d61e3254-link" class="wh-expand-btn"></span><span class="title"><a href="../functions/function.html" id="function-d61e3254-link">Formulas and Functions</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="table-d61e4270" class="topicref" data-id="table" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action table-d61e4270-link" class="wh-expand-btn"></span><span class="title"><a href="../tables/table.html" id="table-d61e4270-link">Tables</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="array-d61e4951" class="topicref" data-id="array" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action array-d61e4951-link" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array.html" id="array-d61e4951-link">Array Formulas</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="array_over-d61e4968" class="topicref" data-id="array_over" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action array_over-d61e4968-link" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_over.html" id="array_over-d61e4968-link">What is an Array Formula</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">A brief description of what an array and an array formula is and in which situation         you can use them.</p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="array_dynamic-d61e5074" class="topicref" data-id="array_dynamic" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action array_dynamic-d61e5074-link" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_dynamic.html" id="array_dynamic-d61e5074-link">Dynamic array formulas</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="array_randarray-d61e5091" class="topicref" data-id="array_randarray" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_randarray.html" id="array_randarray-d61e5091-link">RANDARRAY</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" class="active"><span data-tocid="array_filter-d61e5108" class="topicref" data-id="array_filter" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_filter.html" id="array_filter-d61e5108-link">FILTER</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_sequence-d61e5125" class="topicref" data-id="array_sequence" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_sequence.html" id="array_sequence-d61e5125-link">SEQUENCE</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_sort-d61e5142" class="topicref" data-id="array_sort" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_sort.html" id="array_sort-d61e5142-link">SORT</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_sortby-d61e5159" class="topicref" data-id="array_sortby" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_sortby.html" id="array_sortby-d61e5159-link">SORTBY</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_unique-d61e5176" class="topicref" data-id="array_unique" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_unique.html" id="array_unique-d61e5176-link">UNIQUE</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_tables-d61e5193" class="topicref" data-id="array_tables" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_tables.html" id="array_tables-d61e5193-link">Task: Tables and array formulas</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_xmatch-d61e5210" class="topicref" data-id="array_xmatch" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_xmatch.html" id="array_xmatch-d61e5210-link">XMATCH</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_xlookup-d61e5227" class="topicref" data-id="array_xlookup" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_xlookup.html" id="array_xlookup-d61e5227-link">XLOOKUP</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_xlookup_multiplevalues-d61e5244" class="topicref" data-id="array_xlookup_multiplevalues" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_xlookup_multiplevalues.html" id="array_xlookup_multiplevalues-d61e5244-link">Task: Returning multiple values</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="array_xlookup_2way-d61e5262" class="topicref" data-id="array_xlookup_2way" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array_xlookup_2way.html" id="array_xlookup_2way-d61e5262-link">Task: Two way search</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d61e5330" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d61e5330-link" class="wh-expand-btn"></span><span class="title"><a href="../arrays/exercises/ex_matr001.html" id="tocId-d61e5330-link">Exercises</a></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="chart-d61e5797" class="topicref" data-id="chart" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action chart-d61e5797-link" class="wh-expand-btn"></span><span class="title"><a href="../charts/chart.html" id="chart-d61e5797-link">Charts</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="charttype-d61e6636" class="topicref" data-id="charttype" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action charttype-d61e6636-link" class="wh-expand-btn"></span><span class="title"><a href="../charttypes/charttype.html" id="charttype-d61e6636-link">Chart Types</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="scen-d61e7127" class="topicref" data-id="scen" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action scen-d61e7127-link" class="wh-expand-btn"></span><span class="title"><a href="../scenarios/scen.html" id="scen-d61e7127-link">Scenarios</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="datatable-d61e7571" class="topicref" data-id="datatable" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action datatable-d61e7571-link" class="wh-expand-btn"></span><span class="title"><a href="../datatables/datatable.html" id="datatable-d61e7571-link">Data Tables</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="pivots-d61e8222" class="topicref" data-id="pivots" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action pivots-d61e8222-link" class="wh-expand-btn"></span><span class="title"><a href="../pivots/pivots.html" id="pivots-d61e8222-link">PivotTables</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="goalseek-d61e8952" class="topicref" data-id="goalseek" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action goalseek-d61e8952-link" class="wh-expand-btn"></span><span class="title"><a href="../goalseek/goalseek.html" id="goalseek-d61e8952-link">Goal Seek</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="solver-d61e9391" class="topicref" data-id="solver" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action solver-d61e9391-link" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver.html" id="solver-d61e9391-link">Solver</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="macro-d61e10036" class="topicref" data-id="macro" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action macro-d61e10036-link" class="wh-expand-btn"></span><span class="title"><a href="../macro/macro.html" id="macro-d61e10036-link">Macros</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="meas-d61e10529" class="topicref" data-id="meas" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action meas-d61e10529-link" class="wh-expand-btn"></span><span class="title"><a href="../measurements/meas.html" id="meas-d61e10529-link">Processing measurement results</a></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">FILTER</h1>
+    
+    
+    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc"></p>
+        <p class="- topic/p p">Returns the filtered values from an array/range.</p>
+        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Syntax</h2>
+            
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>FILTER(array,include,[if_empty])</code></pre>
+            <ul class="- topic/ul ul">
+                <li class="- topic/li li">array: the range or array to filter.</li>
+                <li class="- topic/li li">include: an array of booleans where TRUE represents a row or column to
+                    retain.</li>
+                <li class="- topic/li li">if_empty: returned value if no items are retained.</li>
+            </ul>
+        </section>
+        <div class="- topic/example example"><h2 class="- topic/title title sectiontitle">Example</h2>
+            
+            <figure class="- topic/fig fig fignone">
+                <img class="- topic/image image" src="images/array_dyn_filter.png" />
+            </figure>
+            <p class="- topic/p p">Replace in the formula "v" with "m" or "z".</p>
+            <p class="- topic/p p">You can also add multiple criteria. To filter for women less than 170 change the
+                formula in
+                <code class="+ topic/ph pr-d/codeph ph codeph">=FILTER(A32:C41,(B32:B41="f")*(C32:C41&lt;170),"None")</code></p>
+        </div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="22.1">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
